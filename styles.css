@@ -1,5 +1,9 @@
 .grid-div {
     width: 150px;
     height: 150px;
-    border: solid 10px black;
+    border: solid 4px black;
+}
+
+#container {
+    
 }
