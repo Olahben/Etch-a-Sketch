@@ -1,0 +1,1 @@
+const parentDiv = document.querySelector('.div')
