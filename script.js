@@ -5,7 +5,7 @@ const container = document.querySelector('#container');
 //container.appendChild(div)
 
 function makeGrid(gridSize) {
-    const grid = gridSize * 2;
+    const grid = gridSize * gridSize;
     for(let i = 0; i < grid; i++) {
         const div = document.createElement('div')
         container.appendChild(div);
