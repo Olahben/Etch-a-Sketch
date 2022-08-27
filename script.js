@@ -12,7 +12,8 @@ function makeGrid(gridSize) {
         div.classList.add('grid-div')
     }
 }
-makeGrid(16);
+makeGrid(32);
+
 
 
 
