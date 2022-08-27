@@ -15,5 +15,8 @@ function makeGrid(gridSize) {
 makeGrid(32);
 
 
+const gridDivs = document.querySelectorAll('.grid-div')
+console.log(gridDivs)
+
 
 
