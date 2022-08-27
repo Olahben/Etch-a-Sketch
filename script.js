@@ -18,5 +18,7 @@ makeGrid(32);
 const gridDivs = document.querySelectorAll('.grid-div')
 console.log(gridDivs)
 
+gridDivs.forEach(div => div.addEventListener('mouseover', colorGrid));
+
 
 
