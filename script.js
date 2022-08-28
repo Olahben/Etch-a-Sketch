@@ -21,6 +21,6 @@ console.log(gridDivs)
 gridDivs.forEach(div => div.addEventListener('mouseover', () => {
     div.style.backgroundColor = 'black'
 }));
-
+// Listen for when someone puts their mouse over one of the grid divs
 
 
