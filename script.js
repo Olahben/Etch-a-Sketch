@@ -12,7 +12,7 @@ function makeGrid(gridSize) {
         div.classList.add('grid-div')
     }
 }
-makeGrid(16);
+//makeGrid(16);
 
 
 const gridDivs = document.querySelectorAll('.grid-div')
@@ -28,4 +28,5 @@ console.log(input.value)
 
 input.addEventListener('change', () => {
     console.log(input.value)
+
 })
