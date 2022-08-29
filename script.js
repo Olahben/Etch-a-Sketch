@@ -12,7 +12,7 @@ function makeGrid(gridSize) {
         div.classList.add('grid-div')
     }
 }
-makeGrid(100);
+makeGrid(16);
 
 
 const gridDivs = document.querySelectorAll('.grid-div')
