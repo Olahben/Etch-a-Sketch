@@ -23,4 +23,5 @@ gridDivs.forEach(div => div.addEventListener('mouseover', () => {
 }));
 // Listen for when someone puts their mouse over one of the grid divs
 
-
+const input = document.querySelector('input')
+console.log(input.value)
