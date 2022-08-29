@@ -25,3 +25,7 @@ gridDivs.forEach(div => div.addEventListener('mouseover', () => {
 
 const input = document.querySelector('input')
 console.log(input.value)
+
+input.addEventListener('change', () => {
+    console.log(input.value)
+})
