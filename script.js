@@ -28,5 +28,5 @@ console.log(input.value)
 
 input.addEventListener('change', () => {
     console.log(input.value)
-
+    
 })
