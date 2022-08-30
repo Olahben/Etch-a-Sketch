@@ -16,6 +16,7 @@ function makeGrid(gridSize) {
 
 function removeGrid(parent) {
     while (parent.firstChild) { //While there exists a child in the parent node
+        console.log(parent.firstChild)
         parent.removeChild(parent.firstChild)
     } 
 }
@@ -34,7 +35,7 @@ console.log(input.value)
 
 input.addEventListener('change', () => {
     console.log(input.value)
-    
+    removeGrid(container)
     makeGrid(input.value)
     container.style.gridTemplateRows = `${input.value} 1fr`;
     container.style.gridTemplateColumns = `${input.value} 1fr`;
