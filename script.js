@@ -16,7 +16,7 @@ function makeGrid(gridSize) {
 
 function removeGrid(parent) {
     while (parent.firstChild) { //While there exists a child in the parent node
-        console.log(parent.firstChild)
+        //console.log(parent.firstChild)
         parent.removeChild(parent.firstChild)
     } 
 }
