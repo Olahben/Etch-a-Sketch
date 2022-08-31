@@ -19,14 +19,14 @@ makeGrid(32);
 
 
 function removeGrid(parent) {
-    while (parent.firstChild) { //While there exists a child in the parent node
+    while (parent.firstChild) { //While there exists a child in the parent node, do this:
         parent.removeChild(parent.firstChild)
     } 
 }
 
 
 
-input.addEventListener('change', () => {
+input.addEventListener('change', () => { // listen for when the user changes the grid size
     gridSize.textContent = `The current size is: ${input.value}X${input.value}`
     removeGrid(container)
     makeGrid(input.value)
