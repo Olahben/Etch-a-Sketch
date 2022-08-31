@@ -10,15 +10,9 @@ body {
     display: grid;
     box-shadow: 5px 10px 22px 19px rgb(40, 42, 56);
     background-color: rgb(253, 241, 228);
-    /*flex-direction: column;*/
-    /*flex-wrap: wrap;*/
 }
 
-/*@media (max-width: 500px;) {
-    #container {
-        grid-template-columns: repeat(16, 1fr);
-    }
-}
+
 */
 
 #grid-size {
