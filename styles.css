@@ -10,6 +10,8 @@ body {
     display: grid;
     box-shadow: 5px 10px 22px 19px rgb(40, 42, 56);
     background-color: rgb(253, 241, 228);
+    grid-template-columns: repeat(32, 1fr);
+    grid-template-rows: repeat(32, 1fr);
 }
 
 
