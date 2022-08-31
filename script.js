@@ -3,6 +3,8 @@ const gridSize = document.querySelector('#grid-size')
 let gridDivs = document.querySelectorAll('.grid-div')
 const input = document.querySelector('input')
 console.log(input.value)
+const clearGrid = document.querySelector('.grid-clear')
+
 
 function makeGrid(gridSize) {
     const grid = gridSize * gridSize;
@@ -36,5 +38,5 @@ input.addEventListener('change', () => {
     }));
 });
 
-
+clearGrid.addEventListener('click', removeGrid(container))
 
