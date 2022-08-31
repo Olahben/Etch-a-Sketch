@@ -1,8 +1,7 @@
 const container = document.querySelector('#container');
+const gridSize = document.querySelector('#grid-size')
+let gridDivs = document.querySelectorAll('.grid-div')
 
-
-//const div = document.createElement('div')
-//container.appendChild(div)
 
 function makeGrid(gridSize) {
     const grid = gridSize * gridSize;
@@ -10,19 +9,17 @@ function makeGrid(gridSize) {
         const div = document.createElement('div')
         container.appendChild(div);
         div.classList.add('grid-div')
+        
     }
 }
-//makeGrid(16);
+makeGrid(32);
+
 
 function removeGrid(parent) {
     while (parent.firstChild) { //While there exists a child in the parent node
         parent.removeChild(parent.firstChild)
     } 
 }
-
-let gridDivs = document.querySelectorAll('.grid-div')
-
-const gridSize = document.querySelector('#grid-size')
 
 const input = document.querySelector('input')
 console.log(input.value)
