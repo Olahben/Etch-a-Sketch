@@ -38,5 +38,7 @@ input.addEventListener('change', () => {
     }));
 });
 
-clearGrid.addEventListener('click', removeGrid(container))
+clearGrid.addEventListener('click', function() {
+    removeGrid(container)
+})
 
