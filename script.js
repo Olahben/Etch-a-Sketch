@@ -25,6 +25,7 @@ function removeGrid(parent) {
 }
 
 
+
 input.addEventListener('change', () => {
     gridSize.textContent = `The current size is: ${input.value}X${input.value}`
     removeGrid(container)
