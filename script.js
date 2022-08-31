@@ -16,14 +16,12 @@ function makeGrid(gridSize) {
 
 function removeGrid(parent) {
     while (parent.firstChild) { //While there exists a child in the parent node
-        //console.log(parent.firstChild)
         parent.removeChild(parent.firstChild)
     } 
 }
 
 
 const gridDivs = document.querySelectorAll('.grid-div')
-//console.log(gridDivs)
 
 const input = document.querySelector('input')
 console.log(input.value)
