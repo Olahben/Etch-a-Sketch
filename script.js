@@ -37,8 +37,8 @@ input.addEventListener('change', () => {
     console.log(input.value)
     removeGrid(container)
     makeGrid(input.value)
-    container.style.gridTemplateRows = `${input.value} 1fr`;
-    container.style.gridTemplateColumns = `${input.value} 1fr`;
+    container.style.gridTemplateRows = `repeat(${input.value}, 1fr)`;
+    container.style.gridTemplateColumns = `repeat(${input.value}, 1fr)`;
 });
 
 
