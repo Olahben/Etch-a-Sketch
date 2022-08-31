@@ -1,7 +1,8 @@
 const container = document.querySelector('#container');
 const gridSize = document.querySelector('#grid-size')
 let gridDivs = document.querySelectorAll('.grid-div')
-
+const input = document.querySelector('input')
+console.log(input.value)
 
 function makeGrid(gridSize) {
     const grid = gridSize * gridSize;
@@ -21,8 +22,6 @@ function removeGrid(parent) {
     } 
 }
 
-const input = document.querySelector('input')
-console.log(input.value)
 
 input.addEventListener('change', () => {
     gridSize.textContent = `${input.value}X${input.value}`
