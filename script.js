@@ -24,7 +24,7 @@ function removeGrid(parent) {
 
 
 input.addEventListener('change', () => {
-    gridSize.textContent = `${input.value}X${input.value}`
+    gridSize.textContent = `The current size is: ${input.value}X${input.value}`
     removeGrid(container)
     makeGrid(input.value)
     container.style.gridTemplateRows = `repeat(${input.value}, 1fr)`;
