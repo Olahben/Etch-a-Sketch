@@ -28,7 +28,7 @@ const input = document.querySelector('input')
 console.log(input.value)
 
 input.addEventListener('change', () => {
-    console.log(input.value)
+    gridSize.textContent = `${input.value}X${input.value}`
     removeGrid(container)
     makeGrid(input.value)
     container.style.gridTemplateRows = `repeat(${input.value}, 1fr)`;
