@@ -20,8 +20,9 @@ function removeGrid(parent) {
     } 
 }
 
-
 let gridDivs = document.querySelectorAll('.grid-div')
+
+const gridSize = document.querySelector('#grid-size')
 
 const input = document.querySelector('input')
 console.log(input.value)
