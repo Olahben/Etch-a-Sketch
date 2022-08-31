@@ -34,3 +34,9 @@ body {
     border-radius: 6px;
     border-width: 0px;
 }
+
+#settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
