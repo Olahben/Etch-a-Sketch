@@ -25,11 +25,6 @@ function removeGrid(parent) {
 const gridDivs = document.querySelectorAll('.grid-div')
 //console.log(gridDivs)
 
-gridDivs.forEach(div => div.addEventListener('mouseover', () => {
-    div.style.backgroundColor = 'black'
-}));
-// Listen for when someone puts their mouse over one of the grid divs
-
 const input = document.querySelector('input')
 console.log(input.value)
 
@@ -39,6 +34,10 @@ input.addEventListener('change', () => {
     makeGrid(input.value)
     container.style.gridTemplateRows = `repeat(${input.value}, 1fr)`;
     container.style.gridTemplateColumns = `repeat(${input.value}, 1fr)`;
+
 });
 
+gridDivs.forEach(div => div.addEventListener('mouseover', () => {
+    div.style.backgroundColor = 'black' // Listen for when someone puts their mouse over one of the grid divs
+}));
 
